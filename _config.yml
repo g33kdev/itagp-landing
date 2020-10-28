@@ -54,12 +54,8 @@ features                                  :
     description                           : Dark and light theme based on system settings.
     fontawesome_icon_name                 : adjust
   
-  - title                                 : Merchant Autocomplete (Premium)
-    description                           : Merchant entry autocompletes with previously entered merchants
-    fontawesome_icon_name                 : magic
-
-  - title                                 : Entry Name Autocomplete (Premium)
-    description                           : Entry name autocompletes with previously entered names
+  - title                                 : Entry Merchant and Name Autocomplete (Premium)
+    description                           : Merchant and name autocompletes with previously entered info.
     fontawesome_icon_name                 : magic
 
   - title                                 : Export to CSV (Premium)
@@ -69,6 +65,10 @@ features                                  :
   - title                                 : No Ads (Premium)
     description                           : Disable ads.
     fontawesome_icon_name                 : ad
+
+  - title                                 : Backup and Restore (Premium)
+    description                           : Create a backup of all your data and restore to any device.
+    fontawesome_icon_name                 : magic
 
   - title                                 : # New Feature Title
     description                           : # New Feature Description
