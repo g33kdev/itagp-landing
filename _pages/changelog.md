@@ -6,7 +6,7 @@ include_in_header: true
 
 ## Changelog
 
-### **Version 1.4.1**
+### **Version 1.4.2**
 
 What's New:
 
