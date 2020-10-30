@@ -16,7 +16,7 @@ app_description: Track the price history of products so you know what's the best
 
 enable_smart_app_banner: true
 
-
+google_analytics_measurement_id: G-5T11WZB67B
 
 # Information About Yourself
 your_name: g33kdev                                
