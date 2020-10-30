@@ -6,6 +6,12 @@ include_in_header: true
 
 ## Changelog
 
+### **Version 1.4.3**
+
+What's New:
+
+- Add support for multiple in app purchase options
+
 ### **Version 1.3.0**
 
 What's New:
