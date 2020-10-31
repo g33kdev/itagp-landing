@@ -4,7 +4,7 @@
 	<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics_measurement_id }}"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
+		function gtag() { dataLayer.push(arguments); }
 		gtag('js', new Date());
 
 		gtag('config', '{{ site.google_analytics_measurement_id }}');
@@ -16,15 +16,45 @@
 	<base target="_blank">
 
 	<title class="pageTitle">{{ site.page_title }}</title>
-	<meta name="description" content="{{ site.app_description }}">
 
-	<link rel="shortcut icon" href="{{ site.app_icon | relative_url }}">
+	<meta name="title" content="{{ site.page_title }}">
+	<meta name="description" content="{{ site.app_description }}">
+	{% if site.ios_app_id %}
+	<meta name="twitter:app:name:iphone" content="{{ site.app_name}}">
+	<meta name="twitter:app:id:iphone" content="{{ site.ios_app_id }}">
+	<meta property="al:ios:app_name" content="{{ site.app_name}}">
+	<meta property="al:ios:app_store_id" content="{{ site.ios_app_id }}">
+	{% endif %}
+	{% if site.ios_app_id %}
+	<meta property="al:android:app_name" content="{{ site.app_name}}">
+	<meta property="al:android:package" content="{{ site.play_app_id }}">
+	{% endif %}
+	<meta property="og:site_name" content="{{ site.page_title }}">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="{{ site.page_title }}">
+	<meta property="twitter:title" content="{{ site.page_title }}">
+	{% if site.twitter_username %}
+	<meta name="twitter:site" content="@{{ site.twitter_username }}">
+	<meta name="twitter:app:url:iphone" content="medium://p/98540f2fa74e">
+	{% endif %}
+	<meta name="description" content="{{ site.app_description }}">
+	<meta property="og:description" content="{{ site.app_description }}">
+	<meta property="twitter:description" content="{{ site.app_description }}">
+	<meta property="og:url" content="{{ site.url }}/{{ site.baseurl }}">
+	<meta property="al:web:url" content="{{ site.url }}/{{ site.baseurl }}">
+	<meta property="og:image" content="{{ site.card_image | absolute_url }}">
+	<meta name="twitter:image:src" content="{{ site.card_image | absolute_url }}">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="robots" content="index,follow,max-image-preview:large">
 
 	<!-- Smart App Banner -->
 	{% if site.enable_smart_app_banner %}
-		<meta name="apple-itunes-app" content="app-id={{ site.ios_app_id }}">
+	<meta name="apple-itunes-app" content="app-id={{ site.ios_app_id }}">
 	{% endif %}
 
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<link rel="shortcut icon" href="{{ site.app_icon | relative_url }}">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+		integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 	<link rel="stylesheet" href="{{ '/main.css' | relative_url }}">
 </head>
