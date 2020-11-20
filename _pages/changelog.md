@@ -6,6 +6,12 @@ include_in_header: true
 
 ## Changelog
 
+### **Version 1.4.8**
+
+Bug Fixes:
+
+- Allow decimals for units, quantity, and price
+
 ### **Version 1.4.3**
 
 What's New:
