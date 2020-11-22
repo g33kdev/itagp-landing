@@ -6,6 +6,12 @@ include_in_header: true
 
 ## Changelog
 
+### **Version 1.5.0**
+
+Bug Fixes:
+
+- Remove Rate Me! link from app drawer
+
 ### **Version 1.4.8**
 
 Bug Fixes:
