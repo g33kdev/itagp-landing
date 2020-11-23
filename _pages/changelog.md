@@ -6,6 +6,14 @@ include_in_header: true
 
 ## Changelog
 
+### **Version 1.6.1**
+
+What's New:
+
+- Add Rate Me! link in app drawer
+- Improve backup and restore w/ missing images
+- Improve feedback for in app purchases
+
 ### **Version 1.5.0**
 
 Bug Fixes:
