@@ -6,6 +6,17 @@ include_in_header: true
 
 ## Changelog
 
+### **Version 1.8.4**
+
+What's New:
+
+- Add support for custom units
+- Update entries list summary card w/ average
+
+Bug Fixes:
+
+- Fix crash caused by missing in app purchases
+
 ### **Version 1.6.1**
 
 What's New:
